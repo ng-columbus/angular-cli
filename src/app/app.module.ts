@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import appRoutes from './app.routes';
-import { AddressModule } from './address/address.module'
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import { AddressModule } from './address/address.module'
     ProfileComponent
   ],
   imports: [
-    AddressModule,
     BrowserModule,
     FormsModule,
     HttpModule,

@@ -4,7 +4,7 @@ import { AddressComponent } from './address/address.component'
 
 const routes = [
   {path: '', component: ProfileComponent},
-  {path: 'address', component: AddressComponent}
+  {path: 'address', loadChildren: 'app/address/address.module'}
 ]
 
 export default RouterModule.forRoot(routes)
