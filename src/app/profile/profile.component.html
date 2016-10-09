@@ -1,0 +1,18 @@
+<h2>User Profile</h2>
+
+<div class="profile">
+  <fieldset>
+    <input type="text" [(ngModel)]="username" placeholder="username"/>
+  </fieldset>
+  <fieldset>
+    <input type="text" [(ngModel)]="firstname" placeholder="first name"/>
+  </fieldset>
+  <fieldset>
+    <input type="text" [(ngModel)]="lastname" placeholder="surname"/>
+  </fieldset>
+
+  <a class="btn" href="#" (click)="saveProfile()">Save</a>
+</div>
+
+<a class="btn" href="#" (click)="saveProfile()">Update Billing Address</a>
+
