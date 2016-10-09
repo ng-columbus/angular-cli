@@ -21,4 +21,8 @@ export class ProfileComponent implements OnInit {
   saveProfile() {
     console.log( 'Profile', this )
   }
+
+  updateAddress() {
+
+  }
 }
