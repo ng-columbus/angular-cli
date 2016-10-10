@@ -1,3 +1,21 @@
-<p>
-  address works!
-</p>
+<h2>Location Information</h2>
+
+<div class="address">
+  <fieldset>
+    <input type="text" [(ngModel)]="address.street" placeholder="street address"/>
+  </fieldset>
+  <fieldset>
+    <input type="text" [(ngModel)]="address.city" placeholder="city"/>
+  </fieldset>
+  <fieldset>
+    <select [(ngModel)]="address.state" placeholder="state">
+      <option *ngFor="let state of places.getStates()" [value]="state.code">{{state.name}}</option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <input type="text" [(ngModel)]="address.zip" placeholder="zip code"/>
+  </fieldset>
+
+  <a class="btn" href="#" (click)="saveAddress()">Save</a>
+</div>
+
